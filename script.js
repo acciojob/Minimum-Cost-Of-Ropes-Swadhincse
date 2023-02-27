@@ -1,6 +1,6 @@
-function minCostToFormRope(event) {
+function minCostToFormRope(a) {
     //your code here
-    event.preventDefault();
+    a.preventDefault();
     var inputElement = document.querySelector('input').value;
     var arr =  inputElement.split(',');
     arr.sort(function (a,b){return a-b});
@@ -19,5 +19,5 @@ function minCostToFormRope(event) {
 
         arr.sort(function (a,b) {return a-b});
     }
-    document.getElementById("result").textcontent = cost;
+    document.getElementById("result").textcontent=cost;
   }
