@@ -12,7 +12,7 @@ function minCostToFormRope(a) {
 
     while(arr.length > 1){
         var res = Number(arr[0]) + Number(arr[1]);
-        arr.splish(0,2);
+        arr.splice(0,2);
         arr.push(res);
 		cost += res;
         arr.sort(function (a,b) {return a-b});
